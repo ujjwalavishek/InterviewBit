@@ -17,7 +17,7 @@ public class Min_Steps_In_Infinite_Grid {
 				if (y2 - y1 >= 0) {
 					if (x2 - x1 <= y2 - y1) {
 						ans += (x2 - x1);
-						if (y2 < y1 + (x2 - x1)) ans += y2 - (y1 + (x2-x1));
+						if (y2 > y1 + (x2 - x1)) ans += y2 - (y1 + (x2-x1));
 					}
 					else {
 						ans += (y2 - y1);
